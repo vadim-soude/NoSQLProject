@@ -24,7 +24,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            margin-top: 5vh;
         }
         .search-form {
             max-width: 400px;
@@ -59,15 +59,17 @@
 
 <body>
     <nav>
-        <a href="./search">Search a product</a>
+        <a href="./search">Manage products</a>
     </nav>
 
     <form th:action="@{/input}" th:object="${product}" method="post" class="formInsert">
         <div class="search-form">
-            <label for="name">Nom :</label>
-            <input id="name" name="name" th:field="*{name}" />
-            <label for="price">Prix :</label>
-            <input id="price" name="price" th:field="*{price}" />
+            <label for="name">Name :</label>
+            <input id="name" name="name" th:field="*{name}" placeholder="Product"/>
+            <label for="price">Price :</label>
+            <input id="price" name="price" th:field="*{price}"/>
+            <label for="quantity">Quantity :</label>
+            <input id="quantity" name="quantity" th:field="*{quantity}" placeholder="1" />
             <button type="submit">ACCEPTER</button>
         </div>
     </form>
