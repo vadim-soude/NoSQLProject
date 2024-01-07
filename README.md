@@ -1,6 +1,6 @@
 # Projet NoSQL - Redis
 
-Cette application java utilise le framework SpringBoot, pour la démarer il suffit de run la RestApplication présent dans la classe éponyme.
+Cette application java utilise le framework SpringBoot, pour la démarer il suffit de run la RestApplication présent dans la [classe](https://github.com/vadim-soude/NoSQLProject/blob/master/src/main/java/fr/vadimsoude/RestApplication.java) éponyme.
 
 Le site sera disponible ici : http://localhost:8080/input
 
